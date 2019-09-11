@@ -90,7 +90,13 @@
     
     
 <p>Website are built using the <code>pkgdown</code> package.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">pkgdown<span class="op">::</span><span class="kw"><a href="https://pkgdown.r-lib.org/reference/build_site.html">build_site</a></span>()</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pkgdown<span class="op">::</span><span class="kw"><a href="https://pkgdown.r-lib.org/reference/build_site.html">build_site</a></span>()</code></pre></div>
+<p>To add a website follow the instructions here: <a href="https://pkgdown.r-lib.org/reference/deploy_site_github.html" class="uri">https://pkgdown.r-lib.org/reference/deploy_site_github.html</a> The key part is creating the <code>gh-pages</code> branch in bash/PowerShell:</p>
+<pre><code>git checkout --orphan gh-pages
+git rm -rf .
+git commit --allow-empty -m 'Initial gh-pages commit'
+git push origin gh-pages
+git checkout master</code></pre>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
