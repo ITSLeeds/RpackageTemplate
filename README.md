@@ -3,10 +3,8 @@
 
 [![Travis build
 status](https://travis-ci.org/ITSLeeds/RpackageTemplate.svg?branch=master)](https://travis-ci.org/ITSLeeds/RpackageTemplate)
-[![Coverage
-status](https://codecov.io/gh/ITSLeeds/RpackageTemplate/branch/master/graph/badge.svg)](https://codecov.io/github/ITSLeeds/RpackageTemplate?branch=master)
-[![Build
-status](https://ci.appveyor.com/api/projects/status/gqp3smc04as3qg85?svg=true)](https://ci.appveyor.com/project/layik/RpackageTemplate-05ana)
+<!-- [![Coverage status](https://codecov.io/gh/ITSLeeds/RpackageTemplate/branch/master/graph/badge.svg)](https://codecov.io/github/ITSLeeds/RpackageTemplate?branch=master) -->
+<!-- [![Build status](https://ci.appveyor.com/api/projects/status/gqp3smc04as3qg85?svg=true)](https://ci.appveyor.com/project/layik/RpackageTemplate-05ana) -->
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
@@ -17,11 +15,12 @@ Template to form the basis of ITSLeeds R packages
 
 ## Installation
 
-Install the package with **remotes** as
-follows:
+Install the package with **remotes** as follows:
 
 ``` r
 install.packages("remotes") # If you do not already have the remotes package
+Change the contents to "user/repo", e.g:
+# remotes::install_github("ropensci/stplanr") # for the stplanr package
 remotes::install_github("ITSleeds/RpackageTemplate")
 ```
 
@@ -60,13 +59,34 @@ rstudioapi::openProject("/path/to/yourPackageName")
 To add continuous integration, use the following commands:
 
 ``` r
-# usethis::use_pkgdown()
-usethis::use_pkgdown_travis()
-travis::use_travis_deploy()
+remotes::install_github("ropensci/tic")
+tic::use_tic()
 ```
+
+You can use defaults, such as:
+
+``` r
+tic::use_tic(wizard = FALSE, linux = "ghactions", mac = "ghactions", windows = "ghactions",
+deploy = "ghactions", matrix = "none")
+```
+
+Which will use GitHub Actions.
+
+If you want to create a package website, you can use the following
+command:
+
+``` r
+usethis::use_pkgdown()
+```
+
+## Resources
 
 See these resources for further information:
 
+  - Free and open source book on creating R packages:
+    <https://r-pkgs.org/>
+  - Excellent documentation on continuous integration:
+    <https://docs.ropensci.org/tic/>
   - <https://pkgdown.r-lib.org/articles/pkgdown.html>
   - <https://pkgdown.r-lib.org/reference/deploy_site_github.html>
 
