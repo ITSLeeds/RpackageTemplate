@@ -1,10 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-[![Travis build
-status](https://travis-ci.org/ITSLeeds/RpackageTemplate.svg?branch=master)](https://travis-ci.org/ITSLeeds/RpackageTemplate)
+<!-- [![Travis build status](https://travis-ci.org/ITSLeeds/RpackageTemplate.svg?branch=master)](https://travis-ci.org/ITSLeeds/RpackageTemplate) -->
+
 <!-- [![Coverage status](https://codecov.io/gh/ITSLeeds/RpackageTemplate/branch/master/graph/badge.svg)](https://codecov.io/github/ITSLeeds/RpackageTemplate?branch=master) -->
+
 <!-- [![Build status](https://ci.appveyor.com/api/projects/status/gqp3smc04as3qg85?svg=true)](https://ci.appveyor.com/project/layik/RpackageTemplate-05ana) -->
+
+![tic](https://github.com/ITSLeeds/RpackageTemplate/workflows/tic/badge.svg)
 [![Project Status: Active – The project has reached a stable, usable
 state and is being actively
 developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
