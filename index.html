@@ -89,10 +89,10 @@
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>Install the package with <strong>remotes</strong> as follows:</p>
-<div class="sourceCode" id="cb1"><pre class="r">install.packages("remotes") # If you do not already have the remotes package
-Change the contents to "user/repo", e.g:
-# remotes::install_github("ropensci/stplanr") # for the stplanr package
-remotes::install_github("ITSleeds/RpackageTemplate")</pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">"remotes"</span>) <span class="co"># If you do not already have the remotes package</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>Change the contents to <span class="st">"user/repo"</span>, e.g<span class="op">:</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># remotes::install_github("ropensci/stplanr") # for the stplanr package</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"ITSleeds/RpackageTemplate"</span>)</span></code></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
@@ -108,20 +108,28 @@ remotes::install_github("ITSleeds/RpackageTemplate")</pre></div>
 <ul>
 <li>Open the project in RStudio as follows:</li>
 </ul>
-<!-- end list --><div class="sourceCode" id="cb3"><pre class="r"><span class="kw pkg">rstudioapi</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/rstudioapi/man/projects.html">openProject</a></span>(<span class="st">"/path/to/yourPackageName"</span>)</pre></div>
+<!-- end list --><div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="kw">rstudioapi</span>::<span class="fu"><a href="https://rdrr.io/pkg/rstudioapi/man/projects.html">openProject</a></span>(<span class="st">"/path/to/yourPackageName"</span>)
+</pre></div>
 </div>
 <div id="continuous-integration" class="section level2">
 <h2 class="hasAnchor">
 <a href="#continuous-integration" class="anchor"></a>Continuous integration</h2>
 <p>To add continuous integration, use the following commands:</p>
-<div class="sourceCode" id="cb4"><pre class="r"><span class="kw pkg">remotes</span><span class="kw ns">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"ropensci/tic"</span>)
-<span class="kw pkg">tic</span><span class="kw ns">::</span><span class="fu"><a href="https://docs.ropensci.org/tic/reference/use_tic.html">use_tic</a></span>()</pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit">
+<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"ropensci/tic"</span>)
+<span class="kw">tic</span>::<span class="fu"><a href="https://docs.ropensci.org/tic/reference/use_tic.html">use_tic</a></span>()
+</pre></div>
 <p>You can use defaults, such as:</p>
-<div class="sourceCode" id="cb5"><pre class="r"><span class="kw pkg">tic</span><span class="kw ns">::</span><span class="fu"><a href="https://docs.ropensci.org/tic/reference/use_tic.html">use_tic</a></span>(<span class="kw">wizard</span> <span class="kw">=</span> <span class="fl">FALSE</span>, <span class="kw">linux</span> <span class="kw">=</span> <span class="st">"ghactions"</span>, <span class="kw">mac</span> <span class="kw">=</span> <span class="st">"ghactions"</span>, <span class="kw">windows</span> <span class="kw">=</span> <span class="st">"ghactions"</span>,
-<span class="kw">deploy</span> <span class="kw">=</span> <span class="st">"ghactions"</span>, <span class="kw">matrix</span> <span class="kw">=</span> <span class="st">"none"</span>)</pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit">
+<span class="kw">tic</span>::<span class="fu"><a href="https://docs.ropensci.org/tic/reference/use_tic.html">use_tic</a></span>(wizard = <span class="fl">FALSE</span>, linux = <span class="st">"ghactions"</span>, mac = <span class="st">"ghactions"</span>, windows = <span class="st">"ghactions"</span>,
+deploy = <span class="st">"ghactions"</span>, matrix = <span class="st">"none"</span>)
+</pre></div>
 <p>Which will use GitHub Actions.</p>
 <p>If you want to create a package website, you can use the following command:</p>
-<div class="sourceCode" id="cb6"><pre class="r"><span class="kw pkg">usethis</span><span class="kw ns">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_pkgdown.html">use_pkgdown</a></span>()</pre></div>
+<div class="sourceCode" id="cb6"><pre class="downlit">
+<span class="kw">usethis</span>::<span class="fu"><a href="https://usethis.r-lib.org/reference/use_pkgdown.html">use_pkgdown</a></span>()
+</pre></div>
 </div>
 <div id="resources" class="section level2">
 <h2 class="hasAnchor">
@@ -201,7 +209,7 @@ remotes::install_github("ITSleeds/RpackageTemplate")</pre></div>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.0.</p>
 </div>
 
       </footer>
