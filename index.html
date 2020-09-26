@@ -109,27 +109,23 @@
 <li>Open the project in RStudio as follows:</li>
 </ul>
 <!-- end list --><div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="kw">rstudioapi</span>::<span class="fu"><a href="https://rdrr.io/pkg/rstudioapi/man/projects.html">openProject</a></span>(<span class="st">"/path/to/yourPackageName"</span>)
-</pre></div>
+<span class="fu">rstudioapi</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/rstudioapi/man/projects.html">openProject</a></span><span class="op">(</span><span class="st">"/path/to/yourPackageName"</span><span class="op">)</span></pre></div>
 </div>
 <div id="continuous-integration" class="section level2">
 <h2 class="hasAnchor">
 <a href="#continuous-integration" class="anchor"></a>Continuous integration</h2>
 <p>To add continuous integration, use the following commands:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit">
-<span class="kw">remotes</span>::<span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span>(<span class="st">"ropensci/tic"</span>)
-<span class="kw">tic</span>::<span class="fu"><a href="https://docs.ropensci.org/tic/reference/use_tic.html">use_tic</a></span>()
-</pre></div>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"ropensci/tic"</span><span class="op">)</span>
+<span class="fu">tic</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/tic/reference/use_tic.html">use_tic</a></span><span class="op">(</span><span class="op">)</span></pre></div>
 <p>You can use defaults, such as:</p>
 <div class="sourceCode" id="cb5"><pre class="downlit">
-<span class="kw">tic</span>::<span class="fu"><a href="https://docs.ropensci.org/tic/reference/use_tic.html">use_tic</a></span>(wizard = <span class="fl">FALSE</span>, linux = <span class="st">"ghactions"</span>, mac = <span class="st">"ghactions"</span>, windows = <span class="st">"ghactions"</span>,
-deploy = <span class="st">"ghactions"</span>, matrix = <span class="st">"none"</span>)
-</pre></div>
+<span class="fu">tic</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/tic/reference/use_tic.html">use_tic</a></span><span class="op">(</span>wizard <span class="op">=</span> <span class="cn">FALSE</span>, linux <span class="op">=</span> <span class="st">"ghactions"</span>, mac <span class="op">=</span> <span class="st">"ghactions"</span>, windows <span class="op">=</span> <span class="st">"ghactions"</span>,
+deploy <span class="op">=</span> <span class="st">"ghactions"</span>, matrix <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span></pre></div>
 <p>Which will use GitHub Actions.</p>
 <p>If you want to create a package website, you can use the following command:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit">
-<span class="kw">usethis</span>::<span class="fu"><a href="https://usethis.r-lib.org/reference/use_pkgdown.html">use_pkgdown</a></span>()
-</pre></div>
+<span class="fu">usethis</span><span class="fu">::</span><span class="fu"><a href="https://usethis.r-lib.org/reference/use_pkgdown.html">use_pkgdown</a></span><span class="op">(</span><span class="op">)</span></pre></div>
 </div>
 <div id="resources" class="section level2">
 <h2 class="hasAnchor">
